@@ -19,15 +19,14 @@
                     <li><a href="#">(057) 738 30 93, (057) 738 76 93</a></li>
                     <li><a href="#">charivna@mozaika.com.ua</a></li>
                 </ul>
-                <div class="logo">
-                    <figure>
-                        <img src="image/logo.png" alt="Charivna mozaika">
-                    </figure>
-                </div>
-                <form class="search">
-                    <label>
+                <ul class="logo">
+                    <li><a href="#"><img src="image/logo.png" alt="Charivna mozaika"></a></li>
+                </ul>
+                <form>
+                    <div class="search_button">
                         <input type="search" placeholder=" Поиск">
-                    </label>
+                        <input type="submit" value="">
+                    </div>
                 </form>
                 <ul class="languages">
                     <li><a href="#">УКР</a></li>
@@ -37,14 +36,14 @@
             </div>
 
 
-            <nav class="bottom_header_block clearfix">
-                <ul class="main_menu_left">
+            <nav class="bottom_header_block">
+                <ul class="main_menu_left clearfix">
                     <li><a href="#">о нас</a></li>
                     <li><a href="#">продукция</a></li>
                     <li><a href="#">волшебная жизнь</a></li>
                     <li><a href="#">акции</a></li>
                 </ul>
-                <ul class="main_menu_right">
+                <ul class="main_menu_right clearfix">
                     <li><a href="#">контакты</a></li>
                     <li><a href="#">карьера с нами</a></li>
                     <li><a href="#">клиентам</a></li>
@@ -149,9 +148,6 @@
         <div class="background_values wrapper">
             <div class="top_block_values">
                 <h2>Наши ценности</h2>
-                <figure>
-                    <img src="image/cup.png" alt="dd">
-                </figure>
                 <p> Сегодня кондитерские изделия ТМ «Чарівна Мозаїка» представлены нашими партнерами во многих городах
                     Украины,
                     и все знают - кондитерская фабрика «Чарівна Мозаїка» гарантирует высокое качество и отличный
@@ -191,10 +187,9 @@
                     </div>
                 </div>
             </div>
-            <form action="#" method="post">
-                <label for="button"></label>
-                <input id="button" type="button" value="Читать все новости">
-            </form>
+            <ul class="button">
+                <li><a href="#">Читать все новости</a></li>
+            </ul>
         </div>
     </section>
     <section class="navigation">
@@ -207,18 +202,13 @@
         <div class="communication wrapper">
             <form class="form" action="#" method="post">
                 <p>Связаться</p>
-                <label>
-                    <input type="text" name="name" pattern="[A-Za-z]" maxlength="10" placeholder="Имя" required>
-                </label>
-                <label>
-                    <input type="email" name="email-address" placeholder="E-mail" required>
-                </label>
-                <label>
-                    <input type="tel" name="phone-number" maxlength="10" placeholder="Телефон">
-                </label>
+                <input type="text" name="name" pattern="[A-Za-z]" maxlength="10" placeholder="Имя" required>
+                <input type="email" name="email-address" placeholder="E-mail" required>
+                <input type="tel" name="phone-number" maxlength="10" placeholder="Телефон">
                 <textarea name="message" placeholder="Сообщение" required></textarea>
-                <label for="submit"></label>
-                <input type="submit" id="submit" name="submit" value="Отправить">
+                <label for="submit">
+                    <input type="submit" id="submit" name="submit" value="Отправить">
+                </label>
             </form>
         </div>
     </section>
@@ -251,9 +241,7 @@
                 <div class="frame">
                     <form class="form_mailing_list" action="#" method="post">
                         <h4>Подписаться на рассылку</h4>
-                        <label>
-                            <input type="email" name="mailing_list_email-address" placeholder="Введите ваш e-mail">
-                        </label>
+                        <input type="email" name="mailing_list_email-address" placeholder="Введите ваш e-mail">
                         <label for="mailing_list_submit">
                             <input type="submit" id="mailing_list_submit" name="submit" value="Подписаться">
                         </label>
