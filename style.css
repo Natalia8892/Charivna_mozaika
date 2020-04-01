@@ -964,11 +964,15 @@
             .navigation{
                 height:508px;
             }
+            #map{
+                width:100%;
+                height:508px;
+            }
             .communication{
                 position:relative;
             }
             .form{
-                /* position:absolute; */
+                position:absolute;
                 top:-510px;
                 left:0;
                 width:340px;

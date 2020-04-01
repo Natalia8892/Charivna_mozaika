@@ -256,11 +256,25 @@
         </div>
     </footer>
     <script>
-        function initMap()=>{
-
+        function initMap(){
+            let positionMarker = {lat: 49.979802, lng: 36.308815},
+                googleMap = new google.maps.Map(document.getElementById("map"),{
+                    center:{lat:49.979620, lng:36.302553},
+                    zoom: 16,
+                    scrollwheel: 0 
+                }),
+                imageIcon = "image/lollipop.png",
+                marker = new google.maps.Marker({
+                    position: positionMarker,
+                    map: googleMap,
+                    title: 'Кондитерская фабрика "Чарівна Мозаїка"',
+                    // animation: google.maps.Animation.BOUNCE,
+                    animation: google.maps.Animation.DROP,
+                    icon:imageIcon
+                });
         };
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcEls7j9K8NmOvliaxfHni_eRW4Ni7dnA&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4pzklDS2qUuSmrAyIyt3Nd4GbFKTs2YI&callback=initMap"
     async defer></script>
 </body>
 
