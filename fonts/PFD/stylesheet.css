@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('subset-PFDinTextCompPro-Thin.eot');
+    src: local('PFDinTextCompPro-Thin'),
+        url('subset-PFDinTextCompPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('subset-PFDinTextCompPro-Thin.woff2') format('woff2'),
+        url('subset-PFDinTextCompPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+

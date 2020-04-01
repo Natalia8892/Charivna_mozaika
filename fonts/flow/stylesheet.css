@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Flow';
+    src: url('subset-Flow-Bold.eot');
+    src: local('Flow Bold'), local('Flow-Bold'),
+        url('subset-Flow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-Flow-Bold.woff2') format('woff2'),
+        url('subset-Flow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
