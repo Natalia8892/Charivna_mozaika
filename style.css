@@ -431,43 +431,44 @@
             .introduce_description>figure{
                 position:relative;
             }
-            .introduce_description>figure::before,
-            .introduce_description>figure::after{
-                content:"";
-                position:absolute;
-            }
-            .introduce_description>figure::before{
-                bottom:-55px;
-                left:450px;
-                width:88px;
-                height:88px;
-                background:white;
-                border-radius: 50%;
-            }
-            .introduce_description>figure::after{
-                bottom:-16px;
-                left:474px;
-                width:44px;
-                height:43px;
-                background: url(image/css_sprites.png);
-                background-position: -74px -161px;
-            }
             .introduce_description>figure>img {
                 padding:60px 0 82px 0;
             }
 
 
-/* section "BOOK" */
+/* section "Products" */
             .products{
                 height:691px;
             }
             .products>h2{
+                position:relative;
                 font-family: "Flow_bold";
                 font-size:40px;
                 line-height: 160px;
                 text-align: center;
                 color:#65baaf;
                 text-transform: uppercase;
+            }
+            .products>h2::before{
+                content:"";
+                position:absolute;
+                bottom: -55px;
+                top:-44px;
+                left: 450px;
+                width: 88px;
+                height: 88px;
+                background: white;
+                border-radius: 50%;
+            }
+            .products>h2::after{
+                content:"";
+                position:absolute;
+                top:-21px;
+                left:474px;
+                width:44px;
+                height:43px;
+                background: url(image/css_sprites.png);
+                background-position: -74px -161px;
             }
             .products_menu{
                 position:relative;
@@ -852,7 +853,7 @@
                 position:absolute;
                 width:206px;
                 height:21px;
-                top:135px;
+                top:140px;
                 margin-left:62px;
                 background:url(image/cup.png);
             }
@@ -870,6 +871,7 @@
                 margin:0 auto;
                 background:url(image/border.png) no-repeat;
             }
+        
             .bottom_block_values>iframe{
                 margin:31px 0 0 0;
             }
@@ -880,6 +882,7 @@
                 right:0px;
                 background:url(image/cheese.png);
             }
+
             .bottom_block_values::after{
                 width:561px;
                 height:409px;
@@ -887,17 +890,19 @@
                 right: 0px;
                 background:url(image/dough.png);
             }
+
             
 
 /* Posts */
             .posts_section{
                 height:425px;
-                padding:0 0 35px 0;
                 border-top: 1px solid #cdcdcd;
+            }
+            .posts>h2{
+                line-height: 160.37px;
             }
             .news{
                 display:flex;
-                margin-top:-8px;
             }
             .post_left{
                 margin:0 93px 0 0;
@@ -932,7 +937,7 @@
                 color:hsla(36, 44%, 63%, 0.9);
             }
             .button{
-                margin:57px 0 62px 47px;
+                margin:73px 0 62px 47px;
             }
             .button>li>a{
                 padding:11px 26px 11px 26px;
@@ -963,7 +968,7 @@
                 position:relative;
             }
             .form{
-                position:absolute;
+                /* position:absolute; */
                 top:-510px;
                 left:0;
                 width:340px;
